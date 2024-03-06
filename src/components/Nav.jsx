@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 shadow-[0_35px_60px_-15px_rgba(48,109,60,0.3)] mb-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,54 +24,61 @@ const Nav = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-bold text-neutral"
           >
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a>About</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Programs</a>
+            </li>
+            <li>
+              <a>Services</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link href="/">
+          <Image
+            src="/assets/images/nav-logo.png"
+            width={250}
+            height={250}
+            className="object-contain"
+            alt="logo"
+          />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal gap-10 px-1 text-2xl font-bold text-neutral">
           <li>
-            <a>Item 1</a>
+            <Link href="/" alt="donate">
+              Donate
+            </Link>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <a>Home</a>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Programs</a>
+          </li>
+          <li>
+            <a>Services</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <Link
+          href="/"
+          className="btn lg:hidden font-bold text-neutral"
+          alt="donate"
+        >
+          Donate
+        </Link>
       </div>
     </div>
   );
