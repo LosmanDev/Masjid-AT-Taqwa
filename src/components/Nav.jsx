@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-100 shadow-[0_35px_60px_-15px_rgba(48,109,60,0.3)] mb-10">
+    <div className="navbar bg-base-100 shadow-[0_45px_60px_-15px_rgba(48,109,60,0.9)] mb-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,8 +24,13 @@ const Nav = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-bold text-neutral"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-normal text-neutral"
           >
+            <li>
+              <Link href="/ramadan">
+                Ramadan<span className="text-red-900">'24</span>
+              </Link>
+            </li>
             <li>
               <a>Home</a>
             </li>
@@ -51,23 +56,28 @@ const Nav = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal gap-10 px-1 text-2xl font-bold text-neutral">
+        <ul className="menu menu-horizontal gap-10 px-1 text-2xl font-normal text-neutral">
           <li>
             <Link href="/" alt="donate">
               Donate
             </Link>
           </li>
           <li>
-            <a>Home</a>
+            <Link href="/ramadan">
+              Ramadan<span className="text-red-900">'24</span>
+            </Link>
           </li>
           <li>
-            <a>About</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a>Programs</a>
+            <Link href="/">About</Link>
           </li>
           <li>
-            <a>Services</a>
+            <Link href="/">Programs</Link>
+          </li>
+          <li>
+            <Link href="/">Services</Link>
           </li>
         </ul>
       </div>

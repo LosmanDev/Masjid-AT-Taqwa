@@ -5,11 +5,10 @@ import { ImagesSlider } from './images-slider';
 
 export function ImagesSliderDemo() {
   const images = [
-    'https://i.imgur.com/lsGzznL.png',
-    'https://i.imgur.com/sV7G4DG.jpg',
-    'https://i.imgur.com/Tn3ZZI9.jpg',
-    'https://i.imgur.com/GNA6BLR.png',
-    'https://i.imgur.com/h7xPbxF.png',
+    '/assets/images/slide-1.png',
+    '/assets/images/slide-2.jpg',
+    '/assets/images/slide-3.jpg',
+    '/assets/images/slide-4.jpg',
   ];
   return (
     <ImagesSlider className="h-[40rem]" images={images}>
@@ -27,13 +26,15 @@ export function ImagesSliderDemo() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-50 to-white py-4">
-          <span dir="rtl" lang="ar" className="mb-10 block">
-            ﷽
+        <motion.p className="font-medium text-2xl lg:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-50 to-white py-4">
+          <span dir="rtl" lang="ar" className="class mb-10 block ">
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
           </span>
 
-          <span className="mb-10 block">Masjid At Taqwa </span>
-          <span className="mb-10 block">Welcomes You</span>
+          <span className="mb-10 block ">
+            All the Praises and Thanks be to Allah
+          </span>
+          <span className="mb-10 block">We Welcome you</span>
 
           <span className="mt-10 block">105 Ferry Street Malden, MA 02148</span>
         </motion.p>
