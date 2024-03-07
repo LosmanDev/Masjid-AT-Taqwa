@@ -27,7 +27,7 @@ export function ImagesSliderDemo() {
         className="z-50 flex flex-col justify-center items-center"
       >
         <motion.p className="font-medium text-2xl lg:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-gray-50 to-white py-4">
-          <span dir="rtl" lang="ar" className="class mb-10 block ">
+          <span dir="rtl" lang="ar" className="mb-10 block font-bold text-5xl">
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
           </span>
 

@@ -1,11 +1,10 @@
 import Welcome from 'src/components/Welcome';
-import Live from 'src/components/Live';
-
+import Facebook from 'src/components/Facebook';
 const Home = () => {
   return (
     <div>
       <Welcome />
-      <Live />
+      <Facebook />
     </div>
   );
 };
