@@ -58,7 +58,7 @@ const Nav = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-10 px-1 text-2xl font-normal text-neutral">
           <li>
-            <Link href="/" alt="donate">
+            <Link href="/donate" alt="donate">
               Donate
             </Link>
           </li>
@@ -83,7 +83,7 @@ const Nav = () => {
       </div>
       <div className="navbar-end">
         <Link
-          href="/"
+          href="/donate"
           className="btn lg:hidden font-bold text-neutral"
           alt="donate"
         >

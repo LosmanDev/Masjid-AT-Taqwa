@@ -13,12 +13,12 @@ const Welcome = () => {
       <ImagesSliderDemo />
       <main className="mt-10">
         <div className="flex items-center justify-center">
-          <h1 className="pr-2 pl-10 text-4xl font-bold font-serif bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
+          <h1 className="pr-2 text-4xl font-bold font-serif bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
             Prayer Times
           </h1>
           <Image src={image1} width={50} height={50} alt="prayer times" />
         </div>
-        <div className="text-center mt-5 grid grid-cols-3 gap-4">
+        <div className="text-center mt-5 grid grid-cols-3 gap-4 sm:px-52">
           <div className="col-span-3 sm:col-span-1">
             <div className="flex items-center justify-center">
               <h2 className="pr-2 flex-shrink-0 font-semibold bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
@@ -37,7 +37,7 @@ const Welcome = () => {
               <Image src={image3} width={30} height={30} alt="dhuhr sun" />
             </div>
             <p>Adan : 11:59PM</p>
-            <p>Eqamah:12:20PM</p>
+            <p>Eqamah: 12:20PM</p>
           </div>
           <div className="col-span-3 sm:col-span-1">
             <div className="flex items-center justify-center">
