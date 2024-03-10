@@ -1,10 +1,12 @@
+import Image from 'next/image';
 const About = () => {
   return (
     <div className="hero min-h-screen bg-base-200 flex justify-center">
       <div className="hero-content flex-col lg:flex-row">
-        <img
+        <Image
           src="/assets/images/slide-1.png"
           className="max-w-sm rounded-lg shadow-2xl"
+          alt="masjid-logo"
         />
         <div>
           <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-lime-900 to-lime-600 text-transparent bg-clip-text">

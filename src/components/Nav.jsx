@@ -40,7 +40,7 @@ const Nav = () => {
           >
             <li>
               <Link href="/ramadan">
-                Ramadan<span className="text-red-900">'24</span>
+                Ramadan<span className="text-red-900">&apos;24</span>
               </Link>
             </li>
             <li>
@@ -76,7 +76,7 @@ const Nav = () => {
           </li>
           <li>
             <Link href="/ramadan">
-              Ramadan<span className="text-red-900">'24</span>
+              Ramadan<span className="text-red-900">&apos;24</span>
             </Link>
           </li>
           <li>
