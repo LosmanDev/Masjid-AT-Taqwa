@@ -12,7 +12,7 @@ export function ImagesSliderDemo() {
     '/assets/images/slide-4.jpg',
   ];
   return (
-    <ImagesSlider className="h-[40rem]" images={images}>
+    <ImagesSlider className="h-[40rem] p-10" images={images}>
       <motion.div
         initial={{
           opacity: 0,

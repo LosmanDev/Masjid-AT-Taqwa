@@ -17,7 +17,7 @@ const Welcome = () => {
   }, []);
 
   return (
-    <section className=" mt-10">
+    <section className="mt-10">
       <div
         data-aos="fade-down"
         data-aos-duration="2000"
