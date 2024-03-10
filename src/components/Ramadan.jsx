@@ -1,6 +1,12 @@
-import React from 'react';
+'use client';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Ramadan = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const data = [
     { day: 1, suhoor: '05:44 AM', iftar: '6:48 PM', date: '11 Mar 2024' },
     { day: 2, suhoor: '05:43 AM', iftar: '6:49 PM', date: '12 Mar 2024' },
@@ -36,18 +42,28 @@ const Ramadan = () => {
 
   return (
     <>
-      <section className="mt-20">
+      <section
+        data-aos="fade-in"
+        data-aos-duration="2000"
+        data-aos-id="super-duper"
+        className="mt-20"
+      >
         <h1 className="text-center mb-10 lg:text-5xl text-4xl font-bold bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
           Ramadan Calendar 2024
         </h1>
       </section>
-      <div className="overflow-x-auto">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        data-aos-id="super-duper"
+        className="overflow-x-auto"
+      >
         <table className="table table-lg table-pin-rows table-pin-cols text-center">
           <thead className="text-lg text-center">
             <tr>
               <th>Day</th>
-              <td>Suhoor</td>
-              <td>Iftar</td>
+              <td>Fajr</td>
+              <td>Maghrib</td>
               <td>Date</td>
             </tr>
           </thead>

@@ -1,9 +1,21 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Nav = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="navbar bg-base-100 shadow-[0_45px_60px_-15px_rgba(48,109,60,0.9)] mb-10">
+    <div
+      data-aos="fade-down"
+      data-aos-duration="1200"
+      className="navbar bg-base-100 shadow-[0_45px_60px_-15px_rgba(48,109,60,0.9)] mb-10"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,16 +44,16 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a>Programs</a>
+              <Link href="/">Programs</Link>
             </li>
             <li>
-              <a>Services</a>
+              <Link href="/">Services</Link>
             </li>
           </ul>
         </div>
@@ -71,7 +83,7 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <Link href="/">Programs</Link>

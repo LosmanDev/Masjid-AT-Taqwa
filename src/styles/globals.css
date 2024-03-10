@@ -5,3 +5,11 @@
 body {
   font-family: var(--font-poppins);
 }
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+}

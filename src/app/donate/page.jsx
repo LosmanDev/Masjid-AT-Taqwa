@@ -1,7 +1,8 @@
 import React from 'react';
+import Donate from 'src/components/Donate';
 
 const donate = () => {
-  return <div>donate</div>;
+  return <Donate />;
 };
 
 export default donate;
