@@ -10,7 +10,7 @@ const Donate = () => {
   return (
     <div
       data-aos="fade-in"
-      data-aos-duration="2000"
+      data-aos-duration="3000"
       data-aos-id="super-duper"
       className="hero min-h-screen rounded pb-80"
       style={{
@@ -27,7 +27,7 @@ const Donate = () => {
           className="max-w-md"
         >
           <h1 className="mb-5 text-5xl font-bold ">
-            Become a Sustainer for out beloved Masjid!
+            Become a Sustainer for our beloved Masjid!
           </h1>
           <p className="mb-5 leading-8 font-medium">
             Every contribution, big or small, brings us closer to our goal. With
