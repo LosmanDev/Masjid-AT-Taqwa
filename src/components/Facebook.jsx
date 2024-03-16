@@ -35,7 +35,7 @@ const Facebook = () => {
         data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-id="super-duper"
-        className="flex items-center justify-center gap-x-4 gap-y-4 mb-10"
+        className="flex items-center justify-center mb-10"
       >
         <div id="fb-root"></div>
         <div
