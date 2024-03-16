@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+    <footer className="footer footer-center p-4 bg-base-300 text-base-content mt-auto">
       <aside>
         <p className="flex items-center gap-2">
           Copyright © {new Date().getFullYear()} -

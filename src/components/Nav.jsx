@@ -14,7 +14,7 @@ const Nav = () => {
     <div
       data-aos="fade-down"
       data-aos-duration="1200"
-      className="navbar bg-base-100 shadow-[0_45px_60px_-15px_rgba(48,109,60,0.9)] mb-10"
+      className="navbar bg-base-100 rounded"
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -39,21 +39,21 @@ const Nav = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-normal text-neutral"
           >
             <li>
-              <Link href="/ramadan">
-                Ramadan<span className="text-red-900">&apos;24</span>
-              </Link>
-            </li>
-            <li>
               <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="/about">About</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/">Programs</Link>
             </li>
             <li>
               <Link href="/">Services</Link>
+            </li> */}
+            <li>
+              <Link href="/ramadan">
+                Ramadan<span className="text-red-900">&apos;24</span>
+              </Link>
             </li>
           </ul>
         </div>
@@ -70,26 +70,26 @@ const Nav = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-10 px-1 text-2xl font-normal text-neutral">
           <li>
-            <Link href="/donate" alt="donate">
-              Donate
-            </Link>
+            <Link href="/">Home</Link>
           </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          {/* <li>
+            <Link href="/">Programs</Link>
+          </li>
+          <li>
+            <Link href="/">Services</Link>
+          </li> */}
           <li>
             <Link href="/ramadan">
               Ramadan<span className="text-red-900">&apos;24</span>
             </Link>
           </li>
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/">Programs</Link>
-          </li>
-          <li>
-            <Link href="/">Services</Link>
+            <Link href="/donate" alt="donate">
+              Donate
+            </Link>
           </li>
         </ul>
       </div>
