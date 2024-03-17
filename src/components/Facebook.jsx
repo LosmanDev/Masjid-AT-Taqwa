@@ -1,13 +1,9 @@
 'use client';
 import Link from 'next/link';
 import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 
 const Facebook = () => {
   useEffect(() => {
-    // AOS.init();
-
     // Create script element
     const script = document.createElement('script');
     script.src =
@@ -39,7 +35,7 @@ const Facebook = () => {
       >
         <div id="fb-root"></div>
         <div
-          className="fb-page"
+          className="fb-page w-auto justify-center"
           data-href="https://www.facebook.com/taqwamalden"
           data-tabs="timeline"
           data-small-header="true"
