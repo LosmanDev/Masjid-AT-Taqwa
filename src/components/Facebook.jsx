@@ -16,12 +16,12 @@ const Facebook = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section>
+    <section className="grid justify-center">
       <div
         data-aos="fade-in"
         data-aos-duration="2000"
         data-aos-id="super-duper"
-        className="grid grid-rows-1 gap-4 px-3 mt-10 mb-10"
+        className="grid grid-cols-1 gap-4 px-3 mt-10 mb-10"
       >
         <h1 className="text-center text-4xl font-bold font-serif bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
           Join our Facebook page for updates and more..
@@ -35,7 +35,7 @@ const Facebook = () => {
       >
         <div id="fb-root"></div>
         <div
-          className="fb-page w-auto justify-center"
+          className="fb-page shadow-[0_45px_70px_-25px_rgb(48,109,60)]"
           data-href="https://www.facebook.com/taqwamalden"
           data-tabs="timeline"
           data-small-header="true"

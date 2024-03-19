@@ -46,7 +46,7 @@ const Ramadan = () => {
         data-aos="fade-in"
         data-aos-duration="2000"
         data-aos-id="super-duper"
-        className="mt-20"
+        className="sm:mt-48 mt-32"
       >
         <h1 className="text-center mb-10 lg:text-5xl text-4xl font-bold bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
           Ramadan Calendar 2024

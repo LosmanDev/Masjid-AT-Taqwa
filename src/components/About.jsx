@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section>
+    <section className="sm:mt-40 mt-32">
       <div
         data-aos="fade-in"
         data-aos-duration="2000"
@@ -26,7 +26,7 @@ const About = () => {
           data-aos="fade-right"
           data-aos-duration="2000"
           data-aos-id="super-duper"
-          className="grid grid-col-1 gap-4 justify-items-center mb-10  "
+          className="grid grid-col-1 gap-4 justify-items-center mb-10 "
         >
           <Image src="/assets/images/moon.png" width={50} height={50} />
           <h1 className="text-2xl font-medium bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">

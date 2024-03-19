@@ -14,7 +14,7 @@ const Nav = () => {
     <div
       data-aos="fade-down"
       data-aos-duration="1200"
-      className="navbar bg-base-100 rounded"
+      className="navbar bg-base-100 radius-b-2xl shadow-lg fixed top-0 w-full z-[1] "
     >
       <div className="navbar-start">
         <div className="dropdown">

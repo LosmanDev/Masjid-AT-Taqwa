@@ -9,7 +9,7 @@ import image6 from '../../public/assets/images/isha.png';
 
 const Welcome = () => {
   return (
-    <section className="">
+    <section className="mt-20">
       <div
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -30,7 +30,7 @@ const Welcome = () => {
             </h1>
             <Image src={image1} width={50} height={50} alt="prayer times" />
           </div>
-          <div className="text-center card w-80 bg-base-100 shadow-[0_40px_40px_-25px_rgba(48,109,60,0.9)] p-8">
+          <div className="text-center card w-80 bg-base-100 shadow-[0_45px_70px_-25px_rgb(48,109,60)] sm:p-8">
             <div className="card-body">
               <div
                 data-aos="fade-right"
