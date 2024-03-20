@@ -14,7 +14,7 @@ const Nav = () => {
     <div
       data-aos="fade-down"
       data-aos-duration="1200"
-      className="navbar bg-base-100 radius-b-2xl shadow-lg fixed top-0 w-full z-[1] "
+      className="navbar bg-base-100 radius-b-2xl shadow-lg fixed top-0 w-full z-[1] rounded"
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -44,17 +44,6 @@ const Nav = () => {
             <li>
               <Link href="/about">About</Link>
             </li>
-            {/* <li>
-              <Link href="/">Programs</Link>
-            </li>
-            <li>
-              <Link href="/">Services</Link>
-            </li> */}
-            <li>
-              <Link href="/ramadan">
-                Ramadan<span className="text-red-900">&apos;24</span>
-              </Link>
-            </li>
           </ul>
         </div>
         <Link href="/">
@@ -75,17 +64,6 @@ const Nav = () => {
           <li>
             <Link href="/about">About</Link>
           </li>
-          {/* <li>
-            <Link href="/">Programs</Link>
-          </li>
-          <li>
-            <Link href="/">Services</Link>
-          </li> */}
-          <li>
-            <Link href="/ramadan">
-              Ramadan<span className="text-red-900">&apos;24</span>
-            </Link>
-          </li>
           <li>
             <Link href="/donate" alt="donate">
               Donate
@@ -94,6 +72,34 @@ const Nav = () => {
         </ul>
       </div>
       <div className="navbar-end">
+        <Link
+          className="pr-2"
+          target="_blank"
+          href="https://t.co/lZQcuTmccK"
+          alt="whatsapp"
+        >
+          <Image
+            src="/assets/images/whatsapp.svg"
+            width={25}
+            height={25}
+            className="object-contain lg:w-20 lg:h-1/2"
+            alt="whatsapp"
+          />
+        </Link>
+        <Link
+          className="lg:pr-20 pr-2"
+          target="_blank"
+          href="https://www.facebook.com/taqwamalden"
+          alt="facebook"
+        >
+          <Image
+            src="/assets/images/facebook.svg"
+            width={20}
+            height={20}
+            className="object-contain lg:w-16 lg:h-16"
+            alt="whatsapp"
+          />
+        </Link>
         <Link
           href="/donate"
           className="btn lg:hidden font-bold text-neutral"

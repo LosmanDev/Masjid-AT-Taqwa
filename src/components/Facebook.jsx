@@ -21,6 +21,7 @@ const Facebook = () => {
         data-aos="fade-in"
         data-aos-duration="2000"
         data-aos-id="super-duper"
+        data-width="100%"
         className="grid grid-cols-1 gap-4 px-3 mt-10 mb-10"
       >
         <h1 className="text-center text-4xl font-bold font-serif bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -34,7 +35,9 @@ const Donate = () => {
             education, and connection for generations to come. Donate today and
             be a part of something special.
           </p>
-          <button className="btn btn-base-300">Get Started</button>
+          <Link href="https://t.co/15nzZp5E4I">
+            <button className="btn btn-base-300 ">Get Started</button>
+          </Link>
         </div>
       </div>
     </div>

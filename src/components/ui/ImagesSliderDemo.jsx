@@ -45,6 +45,16 @@ export function ImagesSliderDemo() {
           </Link>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>
+
+        <button className="px-4 py-2 backdrop-blur-sm border bg-rose-300/10 border-y-rose-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <Link
+            target="_blank"
+            href="https://www.islamicfinder.org/ramadan-calendar/4930956/boston-ramadan-calendar/"
+          >
+            <span>Ramadan &apos;24 Calendar →</span>
+          </Link>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-red-500 to-transparent" />
+        </button>
       </motion.div>
     </ImagesSlider>
   );

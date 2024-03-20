@@ -15,13 +15,16 @@ const About = () => {
         <h2 className="mb-5 text-2xl font-bold bg-gradient-to-r from-lime-900 to-lime-500 text-transparent bg-clip-text">
           A Beacon of Faith and Education
         </h2>
-        <p className="mb-5 leading-8 font-medium sm:px-52">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-          veritatis blanditiis fuga n Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Quibusdam, magni. Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Ipsum totam tenetur commodi animi in
-          laborum praesentium vero! Doloremque, suscipit unde!
-        </p>
+        <div className="flex justify-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8-eV2hM6n3o?autoplay=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div
           data-aos="fade-right"
           data-aos-duration="2000"
